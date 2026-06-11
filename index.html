@@ -532,6 +532,16 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
 .proj.t-fs .stand::before{color:var(--blue-deep)}
 .proj.t-sys .stand::before{color:var(--mint-deep)}
 
+.proj .plinks{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.proj .plinks a{
+  font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:9px 15px;border:1px solid var(--hair);border-radius:4px;color:var(--paper-dim);
+  transition:all .35s var(--ease);display:inline-flex;align-items:center;gap:8px;
+}
+.proj .plinks a .ar{transition:transform .35s var(--ease)}
+.proj.t-fs .plinks a:hover{border-color:var(--blue);color:var(--paper);background:var(--blue-glow)}
+.proj .plinks a:hover .ar{transform:translate(3px,-3px)}
+
 @media (max-width:560px){
   .proj{grid-template-columns:1fr;gap:14px}
   .proj .no{font-size:34px}
@@ -695,6 +705,10 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
             </div>
           </div>
           <p class="stand">eval-free condition evaluator paired with parameterized SQL yields a zero-injection surface; the RBAC matrix is proven by 22 dedicated tests.</p>
+          <div class="plinks">
+            <a href="https://anish-guntreddi.github.io/workflowops/" target="_blank" rel="noopener">Live demo <span class="ar">↗</span></a>
+            <a href="https://github.com/Anish-Guntreddi/workflowops" target="_blank" rel="noopener">Source <span class="ar">↗</span></a>
+          </div>
         </div>
       </article>
 
@@ -728,6 +742,10 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
             </div>
           </div>
           <p class="stand">dead-worker requeue is tested end-to-end; the webhook SSRF guard is live-probed — IPv6 loopback, DNS-rebind, and metadata IP all blocked.</p>
+          <div class="plinks">
+            <a href="https://anish-guntreddi.github.io/queueforge/" target="_blank" rel="noopener">Live demo <span class="ar">↗</span></a>
+            <a href="https://github.com/Anish-Guntreddi/queueforge" target="_blank" rel="noopener">Source <span class="ar">↗</span></a>
+          </div>
         </div>
       </article>
 
@@ -761,6 +779,10 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
             </div>
           </div>
           <p class="stand">verified live — a generated key authenticates at the gateway (200); missing, garbage, or query-string keys all return 401.</p>
+          <div class="plinks">
+            <a href="https://anish-guntreddi.github.io/devgate/" target="_blank" rel="noopener">Live demo <span class="ar">↗</span></a>
+            <a href="https://github.com/Anish-Guntreddi/devgate" target="_blank" rel="noopener">Source <span class="ar">↗</span></a>
+          </div>
         </div>
       </article>
 
@@ -794,6 +816,10 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
             </div>
           </div>
           <p class="stand">the hard part — authorizing a WebSocket connection before the handshake completes — done right, and proven by 7 dedicated tests.</p>
+          <div class="plinks">
+            <a href="https://anish-guntreddi.github.io/collabboard/" target="_blank" rel="noopener">Live demo <span class="ar">↗</span></a>
+            <a href="https://github.com/Anish-Guntreddi/collabboard" target="_blank" rel="noopener">Source <span class="ar">↗</span></a>
+          </div>
         </div>
       </article>
 
@@ -827,6 +853,10 @@ a:focus-visible,button:focus-visible,.proj:focus-visible{
             </div>
           </div>
           <p class="stand">verified live — an exported "=cmd|calc" becomes "'=cmd|calc"; any cross-org access attempt returns 404.</p>
+          <div class="plinks">
+            <a href="https://anish-guntreddi.github.io/ledgerly/" target="_blank" rel="noopener">Live demo <span class="ar">↗</span></a>
+            <a href="https://github.com/Anish-Guntreddi/ledgerly" target="_blank" rel="noopener">Source <span class="ar">↗</span></a>
+          </div>
         </div>
       </article>
     </div>
